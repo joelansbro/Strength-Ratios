@@ -1,5 +1,6 @@
 import React, { useReducer, useState } from 'react';
 import './bulma.min.css';
+import ToggleSwitch from './Toggleswitch';
 import './styles.css';
 
   const formReducer = (state, event)=>{
@@ -62,6 +63,8 @@ function App() {
    });
  }
   return (
+    <>
+    <ToggleSwitch Name='Page Style'/>
     <div className="container">
       <h1 className="title">Squat - Strength Ratios</h1>
       <form onSubmit={handleSubmit}>
@@ -242,6 +245,7 @@ function App() {
 </div>
 }
     </div>
+    </>
   )
 }
 
